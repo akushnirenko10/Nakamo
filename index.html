@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakamo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <nav class="navigation">
+                <a class="header-logo link"  href="">Nakamo</a>
+                <ul class="site-nav list">
+                    <li class="site-nav-item link">
+                        <a href="" class="site-nav-link current link">Home</a>
+                    </li>
+                    <li class="site-nav-item">
+                        <a href="" class="site-nav-link link">Menu</a>
+                    </li>
+                    <li class="site-nav-item">
+                        <a href="" class="site-nav-link link">Services</a>
+                    </li>
+                    <li class="site-nav-item">
+                        <a href="" class="site-nav-link link">About</a>
+                    </li>
+                    <li class="site-nav-item">
+                        <a href="" class="site-nav-link link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="header-sign-in link" href="">Sign in</a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="hero-subtitle">Food delivery</p>
+                <h1 class="hero-title">Enjoy <span class="accent">Delicious</span><br> Food in your<br> healty life</h1>
+                <p class="hero-desc">Add joy <span class="accent bold">best taste</span> food for the moment and<br> best trying to tie in space you.</p>
+                <button class="hero-button">Order Now</button>
+                <div class="hero-card">
+                    <h2 class="hero-order">Our Happy Customer</h2>
+                    <svg class="hero-icon" width="12" height="12">
+                        <use href="./img/svg/sprite.svg#star"></use>
+                    </svg>
+                    <p class="hero-text"><span class="bold">4.5</span> Reviews</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bestsellers">
+            <div class="container">
+                <p class="bestsellers-subtitle">Menu</p>
+                <h2 class="bestsellers-title">Our best seller</h2>
+                <ul class="bestellers-list list">
+                    <li class="bestsellers-item">
+                        <img src="./img/bestseller-1.jpg" alt="Kopi Susu Butter" height="205" width="390">
+                        <div class="bestsellers-about">
+                            <div class="bessellers-text">
+                                <p class="bestsellers-food">Dessert</p>
+                                <p class="bestsellers-price">Rp 25.000</p>
+                            </div>
+                            <h3 class="bestsellers-order">Kopi Susu Butter</h3>
+                            <p class="bestsellers-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, ut semper nulla magna fermentum interdum sed quis. At
+                            felis purus vulputate fermentum.</p>
+                            <button class="bestsellers-button" type="button">Order Now</button>
+                        </div>
+                    </li>
+                    <li class="bestsellers-item">
+                        <img src="./img/bestseller-2.jpg" alt="Roti Gembung Soklat" height="205" width="390">
+                        <div class="bestsellers-about">
+                            <div class="bessellers-text">
+                                <p class="bestsellers-food">Snack</p>
+                                <p class="bestsellers-price">Rp 8.000</p>
+                            </div>
+                            <h3 class="bestsellers-order">Roti Gembung Soklat</h3>
+                            <p class="bestsellers-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, ut semper nulla magna
+                                fermentum interdum sed quis. At
+                                felis purus vulputate fermentum.</p>
+                            <button class="bestsellers-button" type="button">Order Now</button>
+                        </div>
+                    </li>
+                    <li class="bestsellers-item">
+                        <img src="./img/bestseller-3.jpg" alt="Nasi Gila Spesial" height="205" width="390">
+                    <div class="bestsellers-about">
+                        <div class="bessellers-text">
+                            <p class="bestsellers-food">Food</p>
+                            <p class="bestsellers-price">Rp 28.000</p>
+                        </div>
+                        <h3 class="bestsellers-order">Nasi Gila Spesial</h3>
+                        <p class="bestsellers-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, ut semper nulla magna
+                            fermentum interdum sed quis. At
+                            felis purus vulputate ferm
+                        <button class="bestsellers-button" type="button">Order Now</button>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <p class="services-subtitle">Services</p>
+                <h2 class="services-title">Our Awesome<br> Services</h2>
+                <ul class="services-list list">
+                    <li class="services-item">
+                        <div class="services-icon-wrap">
+                            <svg class="services-icon" width="20" height="19">
+                                <use href="./img/svg/sprite.svg#heart"></use>
+                            </svg>
+                        </div>
+                        <h3 class="services-name">No MSG Food</h3>
+                        <p class="services-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, ut semper nulla magna fermentum.</p>
+                        <a href="" class="services-link">More</a>
+                    </li>
+                    <li class="services-item">
+                        <div class="services-icon-wrap">
+                            <svg class="services-icon" width="21" height="21">
+                                <use href="./img/svg/sprite.svg#moto"></use>
+                            </svg>
+                        </div>
+                        <h3 class="services-name">Free Shipping</h3>
+                        <p class="services-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, ut semper nulla magna fermentum.</p>
+                        <a href="" class="services-link">More</a>
+                    </li>
+                    <li class="services-item">
+                        <div class="services-icon-wrap">
+                            <svg class="services-icon" width="22" height="16">
+                                <use href="./img/svg/sprite.svg#car"></use>
+                            </svg>
+                        </div>
+                        <h3 class="services-name">Easy to Order</h3>
+                        <p class="services-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, ut semper nulla magna fermentum.</p>
+                        <a href="" class="services-link">More</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="container about-us-wrap">
+                <div class="about-us-box-img">
+                    <img class="about-us-img" src="./img/background.png" alt="Food" width="709" height="473">
+                </div>
+                <div class="about-us-box">
+                    <p class="about-us-subtitle">About Us</p>
+                    <h2 class="about-us-title">Healthy meal for customer</h2>
+                    <p class="about-us-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                        venenatis, lectus magna
+                        fringilla urna, porttitor.</p>
+                    <a href="" class="about-us-link">Read more</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial">
+            <div class="container testimonial-container">
+                <div class="testimonial-text">
+                    <p class="testimonial-subtitle">Testimonial</p>
+                    <h2 class="testimonial-title">What Are People
+                        Saying <span class="accent">About Us</span></h2>
+                    <p class="testimonial-desc">We are very happy if you are satisfied with our service and products, let's read pure
+                        reviews from customers who bought
+                        our products.</p>
+                        <ul class="testimonial-nav list">
+                            <li class="testimonial-item">
+                                <button class="testimonial-button current" type="button">
+                                    <svg class="testimonial-icon" width="16" height="16">
+                                        <use href="./img/svg/sprite.svg#evenodd"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="testimonial-item">
+                                <button class="testimonial-button" type="button">
+                                    <svg class="testimonial-icon" width="16" height="16">
+                                        <use href="./img/svg/sprite.svg#evenodd"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                </div>
+                <ul class="testimonial-list list">
+                    <li class="testimonial-card">
+                        <img class="testimonial-img" src="./img/person-1.jpg" alt="Person" width="148" height="148">
+                        <h3 class="testimonial-name">Mumu Gomez</h3>
+                        <p class="testimonial-position">Comedian</p>
+                        <p class="testimonial-review">The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this
+                        salad to all of you guys!</p>
+                    </li>
+                    <li class="testimonial-card">
+                        <img class="testimonial-img" src="./img/person-2.jpg" alt="Person" width="148" height="148">
+                        <h3 class="testimonial-name">Ken Arok</h3>
+                        <p class="testimonial-position">Knight</p>
+                        <p class="testimonial-review">The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this
+                        salad to all of you guys!</p>
+                    </li>
+                    <li class="testimonial-card">
+                        <img class="testimonial-img" src="./img/person-3.jpg" alt="Person" width="148" height="148">
+                        <h3 class="testimonial-name">Isyana Sarasvati</h3>
+                        <p class="testimonial-position">Singer</p>
+                        <p class="testimonial-review">The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this
+                        salad to all of you guys!</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container">
+                <h2 class="subscribe-title">Subscribe to get lastest news update</h2>
+                <p class="subscribe-desc">We recommended you to subscribe to our newspaper, enter your email below to<br>
+                get our daily update about us.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-box">
+                    <a href="" class="footer-logo link">Nakamo</a>
+                    <p class="footer-text">Nakamo is platform for ordering food and catering system easily. Its recomended for young moms.</p>
+                </div>
+                <div class="footer-box">
+                    <h2 class="footer-title">Feature</h2>
+                    <ul class="footer-menu list">
+                        <li class="footer-item">
+                            <a href="" class="footer-link link">Menu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link link">Promo</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link link">Contact</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link link">About us </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h2 class="footer-title">Get in Touch</h2>
+                    <ul class="footer-address list">
+                        <li class="footer-item">
+                            <svg class="footer-icon" width="14" height="20">
+                                <use href="./img/svg/sprite.svg#location"></use>
+                            </svg>
+                            <a href="" class="footer-link link">
+                                Jl Lumajang, Kota<br> Malang. Jawa Timur</a>
+                        </li>
+                        <li class="footer-item">
+                            <svg class="footer-icon" width="20" height="16">
+                                <use href="./img/svg/sprite.svg#email"></use>
+                            </svg>
+                            <a href="mailto:support@nakamo.com" class="footer-link link">
+                                support@nakamo.com</a>
+                        </li>
+                        <li class="footer-item">
+                            <svg class="footer-icon" width="18" height="18">
+                                <use href="./img/svg/sprite.svg#phone"></use>
+                            </svg>
+                            <a href="tel:+623866881234" class="footer-link link">
+                                +62 386-688-1234</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h2 class="footer-title">Social Media</h2>
+                    <ul class="social-media list">
+                        <li class="social-item">
+                            <a href="" class="footer-link">
+                                <svg class="footer-socail-icon" width="30" height="25">
+                                    <use href="./img/svg/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="footer-link">
+                                <svg class="footer-socail-icon" width="25" height="25">
+                                    <use href="./img/svg/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="footer-link">
+                                <svg class="footer-socail-icon" width="32" height="23">
+                                    <use href="./img/svg/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
