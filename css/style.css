@@ -594,7 +594,8 @@ img {
 }
 
 .testimonial-container {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
   display: flex;
   justify-content: space-between;
 }
