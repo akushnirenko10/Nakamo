@@ -98,6 +98,7 @@ img {
   font-size: 32px;
   line-height: 1.12;
   color: var(--color-beta);
+  transition: color 250ms linear;
 }
 
 .site-nav {
@@ -113,6 +114,7 @@ img {
   font-size: 16px;
   line-height: 1.75;
   color: var(--color-alpha);
+  transition: color 250ms linear;
 }
 
 .site-nav-link:hover,
@@ -131,14 +133,13 @@ img {
 }
 
 .site-nav-link.current::after {
-  position: absolute;
-
   content: '';
-  display: block;
-  bottom: -10px;
-  right: 50%;
+  position: absolute;
   width: 8px;
   height: 8px;
+  bottom: -10px;
+  right: 50%;
+  display: block;
 
   border-radius: 50%;
   background-color: var(--accent-color);
@@ -158,6 +159,7 @@ img {
 
   background-color: var(--accent-color);
   border-radius: 8px;
+  transition: background-color 250ms linear;
 }
 
 .header-sign-in:hover,
@@ -171,7 +173,9 @@ img {
 .about-us-link:hover,
 .about-us-link:focus,
 .testimonial-button:hover,
-.testimonial-button:focus {
+.testimonial-button:focus,
+.subscribe-btn:hover,
+.subscribe-btn:focus {
   background-color: #be3734;
 }
 
@@ -180,7 +184,8 @@ img {
 .bestsellers-button:active,
 .services-link:active,
 .about-us-link:active,
-.testimonial-button:active {
+.testimonial-button:active,
+.subscribe-btn:active {
   background-color: #ff6360;
 }
 
@@ -190,6 +195,7 @@ img {
   position: relative;
   padding-top: 50px;
   margin-bottom: 160px;
+
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -210,9 +216,9 @@ img {
 
 .hero-subtitle::after {
   content: '';
-  margin-left: 15px;
   width: 78px;
   height: 6px;
+  margin-left: 15px;
 
   background-color: var(--accent-color);
   border-radius: 8px;
@@ -220,16 +226,17 @@ img {
 
 .hero-title {
   margin-bottom: 45px;
+
   font-weight: 700;
   font-size: 96px;
   line-height: 1.15;
   letter-spacing: 0.5px;
-
   color: var(--color-alpha);
 }
 
 .hero-desc {
   margin-bottom: 45px;
+
   line-height: 1.78;
   color: var(--color-delta);
 }
@@ -246,16 +253,16 @@ img {
   background-color: var(--accent-color);
   border: none;
   border-radius: 8px;
-
   cursor: pointer;
+  transition: background-color 250ms linear;
 }
 
 .hero-card {
   position: absolute;
-  padding: 9px 26px 9px 86px;
-  display: inline-block;
   bottom: 85px;
   left: 45%;
+  display: inline-block;
+  padding: 9px 26px 9px 86px;
 
   background-color: var(--color-omega);
   background-image: url(../img/smile.png);
@@ -268,17 +275,20 @@ img {
 
 .hero-order {
   margin-bottom: 3px;
+
   font-size: 18px;
   line-height: 1.4;
 }
 
 .hero-icon {
   margin-right: 7px;
+
   fill: #ffc107;
 }
 
 .hero-text {
   display: inline;
+
   font-size: 14px;
   line-height: 1.4;
 }
@@ -300,6 +310,7 @@ img {
 
 .bestsellers-title {
   margin-bottom: 35px;
+
   font-size: 48px;
   line-height: 1.1;
   text-align: center;
@@ -312,8 +323,9 @@ img {
 }
 
 .bestsellers-item {
-  flex-shrink: unset;
   width: calc((100% - 70px) / 3);
+  flex-shrink: unset;
+  
   background-color: var(--color-gamma);
   border: 1px solid var(--border-color-beta);
 }
@@ -328,6 +340,10 @@ img {
 
 .bestsellers-item:nth-child(1) {
   margin-top: 205px;
+}
+
+.bestsellers-item:focus-within {
+  border-color: var(--accent-color)
 }
 
 .bestsellers-about {
@@ -412,6 +428,7 @@ img {
   border-radius: 8px;
 
   cursor: pointer;
+  transition: background-color 250ms linear;
 }
 
 /* SERVICES */
@@ -463,10 +480,15 @@ img {
   margin-top: 40px;
 }
 
+.services-item:focus-within {
+  border-color: var(--accent-color);
+}
+
 .services-icon-wrap {
   position: relative;
   width: 72px;
   height: 72px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -480,12 +502,16 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+
   content: '';
+
   display: inline-block;
   width: 72px;
   height: 72px;
+
   background-color: rgba(255, 110, 107, 0.5);
   border-radius: 20px;
+
   transform: rotate(15deg);
 }
 
@@ -522,8 +548,9 @@ img {
   text-align: center;
   color: var(--color-omega);
 
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   border-radius: 8px;
+  transition: background-color 250ms linear;
 }
 
 /* About Us */
@@ -585,6 +612,7 @@ img {
 
   background-color: var(--accent-color);
   border-radius: 8px;
+  transition: background-color 250ms linear;
 }
 
 /* Testimonial */
@@ -648,8 +676,8 @@ img {
   background-color: var(--accent-color);
   border: none;
   border-radius: 10px;
-
   cursor: pointer;
+  transition: background-color 250ms linear;
 }
 
 .testimonial-button.current {
@@ -708,6 +736,57 @@ img {
 
 .subscribe-desc {
   color: var(--color-jota);
+  margin-bottom: 10px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form-wrap {
+  width: 695px;
+  height: 68px;
+
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 10px 10px 26px;
+
+border: 1px solid rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+.subscribe-form-wrap:focus-within {
+  border: 1px solid var(--accent-color);
+}
+
+.subscribe-input {
+  height: 28px;
+
+  border: none;
+  flex-grow: 1;
+}
+
+.subscribe-input::placeholder {
+  line-height: 1.75;
+  letter-spacing: 0.3px;
+  color: var(--color-ny);
+}
+
+.subscribe-btn {
+  width: 164px;
+  height: 48px;
+  margin-left: 10px;
+
+  letter-spacing: 0.3px;
+  color: var(--bg-color-alpha);
+
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms linear;
 }
 
 /* Footer */
@@ -722,6 +801,7 @@ img {
 .footer-wrap {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 74px;
 }
 
 .footer-box:nth-child(1) {
@@ -735,7 +815,7 @@ img {
 }
 
 .footer-box:nth-child(3) {
-  width: 230px;
+  width: 253px;
   margin-right: 60px;
 }
 
@@ -747,6 +827,7 @@ img {
   font-size: 32px;
   line-height: 1.12;
   color: var(--color-omega);
+  transition: color 250ms linear;
 }
 
 .footer-logo:hover,
@@ -775,16 +856,30 @@ img {
   margin-bottom: 15px;
 }
 
+
 .footer-link {
-  display: block;
+  display: flex;
   line-height: 1.5;
   color: var(--color-omega);
+
+  transition: color 250ms linear;
 }
 
 .footer-icon {
   width: 25px;
   margin-right: 20px;
   fill: var(--color-omega);
+
+  transition: fill 250ms linear;
+}
+
+.footer-address-text {
+  display: inline-block;
+  width: 175px;
+}
+
+.footer-link:hover .footer-icon {
+  fill: var(--color-beta);
 }
 
 .social-media {
@@ -799,10 +894,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+
   fill: var(--color-omega);
+  transition: fill 250ms linear;
 }
 
 .footer-socail-icon:hover,
 .footer-socail-icon:focus {
   fill: var(--color-beta);
+}
+
+.footer-copy {
+  margin-bottom: 37px;
+  text-align: center;
 }

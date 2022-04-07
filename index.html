@@ -217,6 +217,12 @@
                 <h2 class="subscribe-title">Subscribe to get lastest news update</h2>
                 <p class="subscribe-desc">We recommended you to subscribe to our newspaper, enter your email below to<br>
                 get our daily update about us.</p>
+                <form class="subscribe-form">
+                    <div class="subscribe-form-wrap">
+                        <input class="subscribe-input" type="email" name="email" placeholder="Enter your email address">
+                        <button class="subscribe-btn" type="submit">Subscribe now</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
@@ -248,25 +254,25 @@
                     <h2 class="footer-title">Get in Touch</h2>
                     <ul class="footer-address list">
                         <li class="footer-item">
-                            <svg class="footer-icon" width="14" height="20">
-                                <use href="./img/svg/sprite.svg#location"></use>
-                            </svg>
                             <a href="" class="footer-link link">
-                                Jl Lumajang, Kota<br> Malang. Jawa Timur</a>
+                                <svg class="footer-icon" width="14" height="20">
+                                    <use href="./img/svg/sprite.svg#location"></use>
+                                </svg>
+                                <span class="footer-address-text">Jl Lumajang, Kota<br> Malang. Jawa Timur</span></a>
                         </li>
                         <li class="footer-item">
-                            <svg class="footer-icon" width="20" height="16">
-                                <use href="./img/svg/sprite.svg#email"></use>
-                            </svg>
                             <a href="mailto:support@nakamo.com" class="footer-link link">
-                                support@nakamo.com</a>
+                                <svg class="footer-icon" width="20" height="16">
+                                    <use href="./img/svg/sprite.svg#email"></use>
+                                </svg>
+                                <span class="footer-address-text">support@nakamo.com</span></a>
                         </li>
                         <li class="footer-item">
-                            <svg class="footer-icon" width="18" height="18">
-                                <use href="./img/svg/sprite.svg#phone"></use>
-                            </svg>
                             <a href="tel:+623866881234" class="footer-link link">
-                                +62 386-688-1234</a>
+                                <svg class="footer-icon" width="18" height="18">
+                                    <use href="./img/svg/sprite.svg#phone"></use>
+                                </svg>
+                                <span class="footer-address-text">+62 386-688-1234</span></a>
                         </li>
                     </ul>
                 </div>
@@ -297,6 +303,7 @@
                     </ul>
                 </div>
             </div>
+            <p class="footer-copy">&copy; Copyright Sinner</p>
         </div>
     </footer>
 </body>
